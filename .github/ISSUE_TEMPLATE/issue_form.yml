@@ -1,14 +1,15 @@
-name: "SSDA Front 이슈 생성"
-description: "SSDA Front Repo에 이슈를 생성하며, 생성된 이슈는 Jira와 연동됩니다."
+name: "이슈 생성"
+description: "생성된 이슈는 Jira와 연동됩니다."
 labels: [order]
-title: "이슈 이름을 작성해주세요"
+title: "[TYPE] ISSUE TITLE"
 body:
   - type: input
     id: parentKey
     attributes:
       label: "상위 작업 Ticket Number"
       description: "상위 작업의 Ticket Number를 기입해주세요"
-      placeholder: "S12P11A408-00"
+      value: |
+        S12P11A408-
     validations:
       required: true
 
